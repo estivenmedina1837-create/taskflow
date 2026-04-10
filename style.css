@@ -8,11 +8,82 @@ body {
     background-color: #0a0a0f;
     color: white;
     font-family: Arial, sans-serif;
+    display: flex;
 }
 
-h1 {
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #111118;
+    padding: 30px 20px;
+    border-right: 1px solid #2a2a3a;
+}
+
+.sidebar h2 {
     color: #6c63ff;
-    text-align: center;
-    margin-top: 50px;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar a {
+    color: #6b6b80;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background-color: #1a1a24;
+    color: white;
+}
+
+/* CONTENIDO */
+.contenido {
+    flex: 1;
+    padding: 40px;
+}
+
+.contenido h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.contenido p {
+    color: #6b6b80;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS */
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #111118;
+    border: 1px solid #2a2a3a;
+    border-radius: 16px;
+    padding: 24px;
+    width: 200px;
+}
+
+.tarjeta h3 {
+    color: #6b6b80;
+    font-size: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.tarjeta .numero {
+    color: #6c63ff;
     font-size: 40px;
+    font-weight: bold;
 }
